@@ -1,0 +1,406 @@
+body {
+    font-family: sans-serif;
+}
+header {
+    margin-top: 10px;
+    .bgcon{
+        background-color: #f0efee;
+    }
+
+}
+
+.bgcon{
+    background-color: red;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 5px;
+   
+
+    
+    .ul_1 li {
+        
+        display: inline-block;
+        font-size: 22px;
+        margin-top: 15px;
+        padding-right: 30px;
+
+        &:hover {
+            color: gray;
+            cursor: pointer;
+        }
+
+
+    }
+
+    .ul_2 {
+        li {
+            display: inline-block;
+            padding-right: 30px;
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+
+            &:hover {
+                color: gray;
+                cursor: pointer;
+                font-weight: 300;
+            }
+        }
+
+        // margin-left: 80px;
+
+    }
+
+    .ul_3 {
+        li {
+            display: inline-block;
+            font-size: 22px;
+            padding-left: 25px;
+            align-items: center;
+            font-weight: 300;
+
+        }
+
+        .login {
+            text-align: center;
+            padding: 3px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+                background-color: rgb(179, 135, 42);
+            }
+        }
+
+        .shop {
+            &:hover {
+                color: gray;
+                cursor: pointer;
+            }
+
+            padding-right: 28px;
+        }
+    }
+}
+.phonenav {
+    display: none;
+}
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .phonenav {
+        display: block;
+    }
+
+    .phonenav ul li {
+        display: inline-block;
+        margin: 5 30px;
+
+    }
+
+    .bars {
+        margin-right: 50px;
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin-right: 50px;
+    }
+
+    .shop {
+        font-size: 23px;
+
+        &:hover {
+            color: gray;
+            cursor: pointer;
+        }
+    }
+
+}
+// section 1 
+#section1 {
+    margin-top: 62px;
+    .container {
+        width: 100%;
+
+        .myrow {
+            background-image: url(./img/imgs1/photo_2021-02-05_18-12-48.jpg);
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            text-align: end;
+            margin-top: 200px;
+            margin-left: 100px;
+            padding-right: 10px;
+
+            h2 {
+                font-size: 42px;
+
+            }
+
+            p {
+                font-size: 32px;
+                color: gray;
+                font-weight: 100;
+            }
+
+            button {
+                color: gold;
+                font-size: 22px;
+                border: none;
+                background-color: transparent;
+                padding: 3px 5px;
+                border-radius: 5px;
+                transition: .5;
+            }
+
+            button:hover {
+                background-color: rgb(148, 109, 58);
+                color: white;
+                transition-duration: .5;
+            }
+        }
+
+    }
+}
+
+// section2
+#section_2 {
+    .container {
+        .row {
+            .acc {
+                background-image: url(./img/imgs1/duante-pendant-768x768.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+                height: 450px;
+                padding: 20px;
+
+                h4 {
+                    color: goldenrod;
+                }
+
+                h2 {
+                    font-size: 38px;
+                }
+
+                p {
+                    color: gray;
+                }
+
+                button {
+                    border: 3px solid black;
+                    padding: 10px 15px;
+                    background-color: transparent;
+
+                    &:hover {
+                        background-color: goldenrod;
+                        border: gold;
+                        color: white;
+                    }
+                }
+
+            }
+
+            .fre {
+                background-image: url(./img/imgs1/afteroom-coat-hanger2-450x450.jpg);
+            }
+
+            .huge {
+                padding: 20px;
+                background-color: rgb(208, 221, 226);
+                background-image: none;
+                margin: 5px 0;
+                height: 400px;
+                text-align: center;
+
+                h4 {
+                    margin-top: 50px;
+                }
+            }
+
+            .cl{
+                display: flex;
+                img{
+                    width: 308px;
+                    padding: 5px;
+
+                    .mr{
+                        margin-right: 50px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 992px) {
+        h4 {
+            margin-top: 0px;
+        }
+
+        .cl{
+            flex-direction: column;
+        }
+    }
+}
+
+// section3
+
+#section_3{
+    .container{
+        .row{
+            background-color: #EDEAD3;
+            padding: 20px;
+
+            .spaces{
+                // width: 1000px;
+                margin: 30px auto;
+                h4{
+                    color: goldenrod;
+                }
+            }
+
+            .box{
+                margin-top: 150px;
+                margin-bottom: 70px;
+                text-align: center;
+
+                i{
+                    font-size: 52px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px){
+        .spaces{
+            width: auto;
+            margin: 0;
+        }
+    }
+}
+
+// section4
+
+#section_4{
+    .container{
+        .row{
+            padding: 20px;
+
+            .featured{
+                padding: 50px;
+                background-color: #EDEAD3;
+                height: 520px;
+                h4{
+                    margin-top: 100px;
+                    color: goldenrod;
+                }
+
+                h2{
+                    font-size: 62px;
+                }
+
+                p{
+                    color: gray;
+                }
+
+                button{
+                    padding: 15px 20px;
+
+                    &:hover{
+                        color: white;
+                        background-color: goldenrod;
+                        border: 3px solid white;
+                    }
+                }
+            }
+
+            .imgClock{
+                box-sizing: border-box;
+                
+                img{
+                    width: 260px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+// section5
+
+#section_5{
+    .container{
+        .row{
+            img{
+                width: 100%;
+            }
+           
+        }
+
+        
+    }
+}
+
+// section6
+#section_6{
+   
+    .container{
+        .row{
+            .chairr{
+                padding: 10px;
+               h3{
+                color: gray;
+                font-weight: 400;
+               }
+
+               p{
+                color: gray;
+               }
+            }
+        }
+    }
+}
+
+// footer
+
+footer{
+    background-color: #3A3A3A;
+    color: white;
+    padding: 20px;
+    padding-left: 100px;
+    font-size: 18px;
+
+    .input-group{
+        .in{
+            display: inline-block;
+        }
+        input{
+            background-color: white;
+            border: 1px solid white;
+        }
+
+        button{
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}
